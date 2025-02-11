@@ -1,0 +1,39 @@
+h3{
+  font-size: 1.25rem;
+}
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 3vh;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+  
+  img {
+    width: 80px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px !important;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
