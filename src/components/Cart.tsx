@@ -13,8 +13,8 @@ const Cart = () => {
   const getTotalAmount = () => items.reduce((total: number, item: any) => total + item.price * item.quantity, 0);
 
   return (
-    <div className="container mt-4">
-      <h2 className="mb-3">Cart</h2>
+    <div>
+      <h2 className="mb-3">Cart</h2>  
       
       {items.length === 0 ? (
         <div className="alert alert-warning text-center">

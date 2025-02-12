@@ -26,10 +26,14 @@ const cartSlice = createSlice({
       } else {
         state.items.push(action.payload);
       }
+      localStorage.setItem('cart', JSON.stringify(state.items));
     },
     adjustQuantity: (state, action: PayloadAction<{ id: number, quantity: number }>) => {
       const item = state.items.find(item => item.id === action.payload.id);
-      if (item) item.quantity = action.payload.quantity;
+      if (item) {
+        item.quantity = action.payload.quantity;
+        localStorage.setItem('cart', JSON.stringify(state.items));
+      }
     },
   },
 });

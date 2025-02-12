@@ -10,11 +10,15 @@ const ProductCard = ({ id, title, price, image }: any) => {
   };
 
   return (
-    <div className='col-md-5 product-card'>
+    <div className="card shadow-sm h-100 text-center p-3 product-card">
       <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>${price}</p>
-      <button onClick={handleAddToCart}>Add to Cart</button>
+      <div className="card-body d-flex flex-column justify-content-between">
+        <h5 className="card-title">{title}</h5>
+        <p className="card-text">${price}</p>
+        <button onClick={handleAddToCart}>
+          Add to Cart
+        </button>
+      </div>
     </div>
   );
 };
