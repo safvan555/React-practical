@@ -11,6 +11,8 @@ const ProductCard = ({ id, title, price, image }: any) => {
 
   return (
     <div className="card shadow-sm h-100 text-center p-3 product-card">
+      {/* this is product card here will show only 5 product here */}
+      
       <img src={image} alt={title} />
       <div className="card-body d-flex flex-column justify-content-between">
         <h5 className="card-title">{title}</h5>

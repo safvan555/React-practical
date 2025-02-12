@@ -1,44 +1,60 @@
-h3{
-  font-size: 1.25rem !important;
-}
+/* this is global css */
+
 .container {
   margin: 0 auto;
   margin-top: 3vh;
 }
 
+h3 {
+  font-size: 1.25rem !important;
+}
+
+img {
+  width: 80px;
+  object-fit: cover;
+}
+
+input {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #888888;
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  background-color: #02478d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px !important;
+  transition:all .3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: 600;
+}
+
 .product-card {
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 8px;
-  }
-  
-  img {
-    width: 80px;
-    object-fit: cover;
-  }
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
 
-  input {height: 40px; border-radius: 8px; border: 1px solid #888888; padding: 10px;}
-  
-  button {
-    width: 100%;
-    padding: 5px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px !important;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+.cart-table input {
+  width: 80px;
+}
 
-  @media screen and (max-width: 1199px) {
-    h3{
-      font-size: 1rem !important;
-    }
+@media screen and (max-width: 1199px) {
+  h3 {
+    font-size: 1rem !important;
   }
+}
